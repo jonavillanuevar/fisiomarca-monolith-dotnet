@@ -1,0 +1,30 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+
+# VS Code
+.vscode/
+
+# Otros IDEs
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+
+# Publicación
+publish/
+*.publishsettings
