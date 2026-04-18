@@ -1627,7 +1627,8 @@ footer.fm-footer {
     footer.fm-footer .fm-bottom {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
         gap: 12px;
         flex-wrap: wrap;
         color: rgba(255,255,255,.70);
@@ -2000,7 +2001,7 @@ footer.fm-footer {
 }
 
 /*=================
-    LOYAOUT
+    LAYOUT
 ==================*/
 
 .fm-page {

@@ -12,7 +12,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    options.Cookie.Name = ".FisioMarca.Session.v2"; // <- CAMBIO IMPORTANTE
+    options.Cookie.Name = ".FisioMarca.Session.v2";
     options.IdleTimeout = TimeSpan.FromHours(8);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;

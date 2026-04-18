@@ -1,0 +1,292 @@
+﻿/* =============================================
+   SERVICES.CSS — Catálogo de servicios
+   Fisiomarca
+============================================= */
+
+.services-page {
+    margin-top: 10px;
+}
+
+/* ---- Barra de filtros ---- */
+.svc-filterbar {
+    background: #fff;
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    padding: 18px;
+}
+
+.svc-filterform {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.svc-filter-left {
+    flex: 1 1 520px;
+    min-width: 280px;
+}
+
+.svc-filter-right {
+    flex: 0 0 360px;
+    min-width: 280px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.svc-label {
+    font-weight: 800;
+    color: #0f172a;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.svc-searchwrap {
+    position: relative;
+}
+
+.svc-search {
+    border-radius: 14px;
+    height: 46px;
+    border: 1px solid #d7dee8;
+}
+
+    .svc-search:focus {
+        border-color: #7aa2ff;
+        box-shadow: 0 0 0 .2rem rgba(47,102,232,.15);
+    }
+
+.svc-clearbtn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    font-size: 20px;
+    line-height: 1;
+    color: #64748b;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    .svc-clearbtn:hover {
+        background: #f1f5f9;
+        color: #0f172a;
+    }
+
+.svc-price-row {
+    flex: 1;
+}
+
+.svc-price-label {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.svc-range {
+    margin: 0;
+}
+
+.svc-apply {
+    height: 46px;
+    border-radius: 14px;
+    padding: 10px 16px;
+    white-space: nowrap;
+}
+
+.svc-clearfilters {
+    height: 46px;
+    border-radius: 14px;
+    padding: 10px 14px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* ---- Layout sidebar + grid ---- */
+.svc-layout {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+/* ---- Sidebar categorías ---- */
+.svc-sidebar {
+    background: #fff;
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    padding: 16px;
+}
+
+.svc-sidebar-title {
+    font-weight: 900;
+    letter-spacing: .08em;
+    color: #94a3b8;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.svc-cat-link {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: #334155;
+    font-weight: 800;
+    margin-bottom: 8px;
+    transition: all .18s ease;
+    border: 1px solid transparent;
+}
+
+    .svc-cat-link:hover {
+        background: rgba(13,110,253,.08);
+        color: #0d6efd;
+    }
+
+    .svc-cat-link.active {
+        background: linear-gradient(135deg,#2f66e8,#1f57de);
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(47,102,232,.18);
+    }
+
+/* ---- Grid de tarjetas ---- */
+.svc-gridwrap {
+    width: 100%;
+}
+
+.svc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* ---- Tarjeta de servicio ---- */
+.svc-card {
+    background: #fff;
+    border-radius: 22px;
+    border: 1px solid #eef2f7;
+    box-shadow: 0 10px 26px rgba(15,23,42,.08);
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+    .svc-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 34px rgba(15,23,42,.14);
+    }
+
+.svc-imgwrap {
+    position: relative;
+    background: #f3f7ff;
+    padding: 14px;
+}
+
+.svc-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    display: block;
+}
+
+.svc-chip {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    max-width: calc(100% - 24px);
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-weight: 900;
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.svc-body {
+    padding: 16px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 260px;
+}
+
+.svc-name {
+    font-weight: 900;
+    font-size: 1.12rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6em;
+}
+
+.svc-desc {
+    color: #64748b;
+    line-height: 1.45;
+    font-size: .98rem;
+    margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.2em;
+}
+
+.svc-bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.svc-price {
+    font-weight: 900;
+    font-size: 1.85rem;
+    color: #0b2545;
+    line-height: 1;
+}
+
+.svc-btn {
+    width: 100%;
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-weight: 900;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+    .svc-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-filter-right {
+        flex: 1 1 100%;
+    }
+}

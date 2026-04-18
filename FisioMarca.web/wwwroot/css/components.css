@@ -1,0 +1,140 @@
+﻿/* =============================================
+   COMPONENTS.CSS — Botones, Auth, Badges
+   Fisiomarca
+============================================= */
+
+/* ---- Botón verde principal ---- */
+.btn-main {
+    background: linear-gradient(135deg, #16a570, #118a60);
+    border: none;
+    color: #fff;
+    border-radius: 14px;
+    padding: .85rem 1.35rem;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(17,138,96,.28);
+    transition: all .2s ease;
+}
+
+    .btn-main:hover {
+        background: linear-gradient(135deg, #138a60, #0f7652);
+        color: #fff;
+        transform: translateY(-1px);
+    }
+
+/* ---- Botón azul primario ---- */
+.btn-fm-primary {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #2f66e8, #1f57de);
+    box-shadow: 0 8px 20px rgba(47, 102, 232, 0.28);
+    transition: all .2s ease;
+}
+
+    .btn-fm-primary:hover,
+    .btn-fm-primary:focus {
+        color: #fff;
+        background: linear-gradient(135deg, #285bd2, #1b4dca);
+        transform: translateY(-1px);
+    }
+
+/* ---- Botón outline ---- */
+.btn-fm-outline {
+    border: 1.6px solid #2f66e8;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 700;
+    color: #2f66e8;
+    background: #fff;
+    text-decoration: none !important;
+    transition: all .2s ease;
+}
+
+    .btn-fm-outline:hover,
+    .btn-fm-outline:focus {
+        color: #fff;
+        background: #2f66e8;
+        text-decoration: none !important;
+    }
+
+/* ---- Auth card ---- */
+.auth-card {
+    background: #fff;
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.auth-title {
+    color: #123a73;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.auth-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ---- Status badges ---- */
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.80rem;
+    font-weight: 700;
+}
+
+.status-programada {
+    color: #0f5132;
+    background: #d1fae5;
+}
+
+.status-cancelada {
+    color: #842029;
+    background: #f8d7da;
+}
+
+.status-atendida {
+    color: #084298;
+    background: #cfe2ff;
+}
+
+.status-default {
+    color: #334155;
+    background: #e2e8f0;
+}
+
+/* ---- Empty state ---- */
+.empty-card {
+    background: #fff;
+    border: 1px dashed #c9d6ea;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.04);
+}
+
+    .empty-card h5 {
+        color: #123a73;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    .empty-card p {
+        color: #64748b;
+        margin-bottom: 16px;
+    }
+
+/* ---- Responsive ---- */
+@media (max-width: 575.98px) {
+    .auth-actions .btn-fm-primary,
+    .auth-actions .btn-fm-outline {
+        width: 100%;
+        text-align: center;
+    }
+}

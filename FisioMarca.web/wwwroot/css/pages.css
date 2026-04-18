@@ -1,0 +1,421 @@
+﻿/* =============================================
+   PAGES.CSS — Nosotros, Sedes, Agenda, Cliente
+   Fisiomarca
+============================================= */
+
+/* ============================================
+   NOSOTROS / ABOUT
+============================================= */
+.nosotros-hero {
+    background: linear-gradient(120deg, #0d6efd 0%, #0b5ed7 50%, #198754 100%);
+}
+
+.about-hero {
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 280px;
+    background: linear-gradient(120deg, rgba(14, 101, 255, 0.78), rgba(0, 160, 110, 0.72)), url('/images/nosotros/docnos.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--fm-shadow-sm);
+}
+
+.about-hero-overlay {
+    width: 100%;
+    padding: 2.5rem 3rem;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    color: #fff;
+}
+
+    .about-hero-content h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .about-hero-content p {
+        font-size: clamp(1.05rem, 2.1vw, 1.55rem);
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+.about-intro .row {
+    align-items: center;
+}
+
+.about-intro h2 {
+    font-weight: 800;
+    margin-bottom: .9rem;
+}
+
+.about-intro-text {
+    max-width: 980px;
+    font-size: clamp(1.12rem, 2.1vw, 1.45rem);
+    line-height: 1.7;
+    color: #5f6f83;
+    margin-bottom: 0;
+}
+
+.about-intro-image-wrap {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--fm-shadow-md);
+}
+
+.about-intro-image {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.value-card {
+    border-radius: 16px !important;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+    .value-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 24px rgba(0,0,0,.12) !important;
+    }
+
+    .value-card .card-body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+.mvv-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* ============================================
+   SEDES
+============================================= */
+.sedes-panel {
+    background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+    border: 1px solid #d8e6ff;
+    border-radius: 18px;
+    padding: 1.35rem;
+    box-shadow: 0 8px 20px rgba(22, 72, 153, .08);
+}
+
+.sedes-title {
+    font-size: clamp(1.8rem, 2vw, 2.35rem);
+    font-weight: 800;
+    color: #0a2f63;
+    margin-bottom: 1.25rem;
+    letter-spacing: .2px;
+}
+
+.sedes-list {
+    display: grid;
+    gap: .75rem;
+}
+
+.sede-pill {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    border: 1.5px solid #1f6feb;
+    border-radius: 14px;
+    padding: .78rem 1rem;
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #0f2744;
+    background: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+    .sede-pill:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 16px rgba(31, 111, 235, .14);
+        border-color: #165ad1;
+    }
+
+    .sede-pill .dot {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #2f80ed;
+        box-shadow: 0 0 0 6px rgba(47, 128, 237, .13);
+        flex: 0 0 11px;
+    }
+
+.sedes-carousel {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, .12);
+    background: #fff;
+}
+
+.sedes-img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+#sedesCarousel .carousel-control-prev,
+#sedesCarousel .carousel-control-next {
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 47, 99, .4);
+    border-radius: 50%;
+}
+
+#sedesCarousel .carousel-control-prev {
+    left: 12px;
+}
+
+#sedesCarousel .carousel-control-next {
+    right: 12px;
+}
+
+#sedesCarousel .carousel-indicators [data-bs-target] {
+    width: 26px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+/* ============================================
+   AGENDA / RESERVAS (CLIENTE)
+============================================= */
+.agenda-page {
+    margin-top: 8px;
+}
+
+.agenda-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.agenda-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    color: #123a73;
+}
+
+.agenda-subtitle {
+    margin: 6px 0 0;
+    color: #5f6f86;
+    font-size: 0.98rem;
+}
+
+.agenda-new-btn {
+    border-radius: 12px !important;
+    padding: 10px 16px;
+    font-weight: 700;
+}
+
+.agenda-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #edf2f7;
+    overflow: hidden;
+}
+
+.agenda-table {
+    margin-bottom: 0;
+}
+
+    .agenda-table thead th {
+        border: none !important;
+        background: #f3f7ff;
+        color: #1e3a8a;
+        font-weight: 700;
+        padding: 14px 14px;
+        font-size: 0.95rem;
+    }
+
+    .agenda-table tbody td {
+        padding: 14px;
+        border-top: 1px solid #eef2f7;
+        vertical-align: middle;
+    }
+
+    .agenda-table tbody tr:hover {
+        background: #fafcff;
+    }
+
+/* ============================================
+   PANEL DE CLIENTE
+============================================= */
+.client-panel {
+    margin-top: 10px;
+}
+
+.client-hero {
+    background: #fff;
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    padding: 22px;
+}
+
+    .client-hero h1 {
+        margin: 0;
+        font-weight: 900;
+        color: #123a73;
+        font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+    }
+
+    .client-hero p {
+        margin: .4rem 0 0;
+        color: #64748b;
+    }
+
+.client-tabbar {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #eaf4ff;
+    border: 1px solid #d9e8ff;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.client-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-weight: 800;
+    color: #0f2744;
+    background: #fff;
+    border: 1px solid rgba(13,110,253,.18);
+    min-width: 220px;
+    transition: all .18s ease;
+}
+
+    .client-tab:hover {
+        background: rgba(13,110,253,.08);
+        color: #0d6efd;
+    }
+
+    .client-tab.active {
+        background: linear-gradient(135deg,#2f66e8,#1f57de);
+        color: #fff;
+        border-color: transparent;
+        box-shadow: 0 10px 20px rgba(47,102,232,.18);
+    }
+
+.client-card {
+    background: #fff;
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    overflow: hidden;
+}
+
+.client-card-head {
+    background: #f3f7ff;
+    border-bottom: 1px solid #e9eef5;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#2f66e8,#1f57de);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+.client-card-title {
+    margin: 0;
+    font-weight: 900;
+    color: #0a2f63;
+}
+
+.client-card-sub {
+    margin: 0;
+    color: #64748b;
+}
+
+.client-card-body {
+    padding: 18px;
+}
+
+.client-table thead th {
+    border: none !important;
+    background: #f3f7ff;
+    color: #1e3a8a;
+    font-weight: 800;
+    padding: 14px 14px;
+    font-size: .95rem;
+}
+
+.client-table tbody td {
+    padding: 14px;
+    border-top: 1px solid #eef2f7;
+    vertical-align: middle;
+}
+
+.client-table tbody tr:hover {
+    background: #fafcff;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+    .about-hero {
+        min-height: 230px;
+    }
+
+    .about-hero-overlay {
+        padding: 2rem 1.4rem;
+    }
+
+    .about-intro-image-wrap {
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--fm-shadow-md);
+        height: clamp(300px, 40vw, 460px);
+    }
+
+    .about-intro-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .mvv-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sedes-img {
+        height: 340px;
+    }
+
+    .agenda-title {
+        font-size: 1.6rem;
+    }
+
+    .agenda-table thead th,
+    .agenda-table tbody td {
+        white-space: nowrap;
+    }
+}

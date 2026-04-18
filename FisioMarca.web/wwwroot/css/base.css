@@ -1,0 +1,126 @@
+﻿/* =============================================
+   BASE.CSS — Variables, reset y layout global
+   Fisiomarca
+============================================= */
+
+/* ---- Variables CSS ---- */
+:root {
+    --fm-bg: #f4f7f7;
+    --fm-text: #1f2937;
+    --fm-muted: #64748b;
+    --fm-primary: #0d6efd;
+    --fm-primary-dark: #0b5ed7;
+    --fm-accent: #198754;
+    --fm-white: #ffffff;
+    --fm-shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.08);
+    --fm-shadow-md: 0 10px 26px rgba(15, 23, 42, 0.12);
+    --fm-radius: 16px;
+    --fm-radius-sm: 12px;
+}
+
+/* ---- Reset base ---- */
+html, body {
+    background: var(--fm-bg);
+    color: var(--fm-text);
+    height: 100%;
+}
+
+    body:not(.admin-body) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+        body:not(.admin-body) > main {
+            flex: 1 0 auto;
+        }
+
+        body:not(.admin-body) footer.fm-footer {
+            margin-top: auto;
+        }
+
+        body:not(.admin-body) > main.container {
+            padding-top: 28px;
+            padding-bottom: 72px;
+        }
+
+/* ---- Links ---- */
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+    a.btn,
+    a.btn:hover,
+    a.btn:focus,
+    a.btn:active,
+    .btn-link {
+        text-decoration: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+/* ---- Inputs y selects ---- */
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #d7dee8;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #7aa2ff;
+        box-shadow: 0 0 0 .2rem rgba(47, 102, 232, .15);
+    }
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: .9;
+}
+
+/* ---- Layout general ---- */
+.fm-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fm-main {
+    flex: 1 0 auto;
+}
+
+.fm-footer {
+    margin-top: auto;
+}
+
+@media (min-height: 800px) {
+    .fm-main {
+        padding-bottom: 3.5rem;
+    }
+}
+
+/* ---- Auth page layout ---- */
+.fm-auth-page {
+    min-height: calc(100vh - 210px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 5rem;
+}
+
+    .fm-auth-page .row {
+        width: 100%;
+    }
+
+    .fm-auth-page .card {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media (max-width: 575.98px) {
+    .fm-auth-page {
+        min-height: auto;
+        align-items: flex-start;
+        padding: 1.75rem 0 3rem;
+    }
+}

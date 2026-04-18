@@ -1,0 +1,164 @@
+﻿/* =============================================
+   NAVBAR.CSS — Barra de navegación y logo/brand
+   Fisiomarca
+============================================= */
+
+/* ---- Navbar ---- */
+.navbar {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    background: #fff;
+}
+
+.navbar-brand {
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: .2px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    gap: .35rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #334155 !important;
+    padding: .5rem .75rem !important;
+    border-radius: 10px;
+    transition: all .18s ease;
+    text-decoration: none !important;
+}
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--fm-primary) !important;
+        background: rgba(13, 110, 253, .08);
+        text-decoration: none !important;
+    }
+
+/* ---- Botón logout ---- */
+.logout-icon-btn {
+    border: none;
+    background: transparent;
+    padding: 0.25rem .35rem;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .18s ease, transform .18s ease;
+}
+
+    .logout-icon-btn:hover {
+        background: rgba(13, 110, 253, .10);
+        transform: translateY(-1px);
+    }
+
+    .logout-icon-btn:focus-visible {
+        outline: 2px solid rgba(47, 102, 232, .45);
+        outline-offset: 2px;
+    }
+
+.logout-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+/* ---- Nav pill especial ---- */
+.fm-nav-pill {
+    background: rgba(13, 110, 253, .08);
+    border: 1px solid rgba(13, 110, 253, .18);
+    border-radius: 999px;
+    padding: .5rem .95rem !important;
+    font-weight: 800;
+}
+
+    .fm-nav-pill:hover {
+        background: rgba(13, 110, 253, .14);
+    }
+
+/* ---- Logo / Brand ---- */
+.fm-brand {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: .35rem .15rem;
+}
+
+.fm-brand-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    display: block;
+    flex: 0 0 44px;
+}
+
+.fm-brand-name {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.fm-brand-fisio {
+    font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.55rem;
+    letter-spacing: .2px;
+    color: #0f172a;
+}
+
+.fm-brand-marca {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 1.55rem;
+    color: #0d6efd;
+    transform: translateY(2px);
+}
+
+.fm-brand:hover .fm-brand-marca {
+    color: #0b5ed7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.55rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+        gap: .1rem;
+    }
+
+    .fm-brand-logo {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .fm-brand-fisio,
+    .fm-brand-marca {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .logout-icon-img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .fm-brand-logo {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
+    .fm-brand-fisio,
+    .fm-brand-marca {
+        font-size: 1.25rem;
+    }
+}

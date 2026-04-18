@@ -1,0 +1,376 @@
+﻿/* =============================================
+   HOME.CSS — Hero, Categorías, Historias, Carouseles
+   Fisiomarca
+============================================= */
+
+/* ---- Hero principal ---- */
+.hero-home {
+    position: relative;
+    min-height: 420px;
+    border-radius: 26px;
+    overflow: hidden;
+    background: linear-gradient(100deg, rgba(8,33,64,.30) 0%, rgba(9,73,131,.22) 35%, rgba(8,157,118,.24) 100%), url('/images/home/baner.png') center center / cover no-repeat;
+    box-shadow: 0 14px 40px rgba(0,0,0,.12);
+    margin-bottom: 2rem;
+}
+
+.hero-overlay {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2.5rem 3rem;
+}
+
+.hero-content {
+    max-width: 620px;
+    color: #fff;
+    text-shadow: 0 2px 14px rgba(0,0,0,.2);
+    text-align: right;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.18);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.35);
+    padding: .45rem .85rem;
+    border-radius: 999px;
+    font-size: .92rem;
+    font-weight: 600;
+    margin-bottom: .9rem;
+    backdrop-filter: blur(2px);
+}
+
+.hero-home h1 {
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: .85rem;
+}
+
+.hero-home .lead {
+    font-size: clamp(1.02rem, 1.6vw, 1.45rem);
+    color: rgba(255,255,255,.95);
+    margin-bottom: 1.4rem;
+}
+
+/* ---- Historias / Testimonios ---- */
+.stories-section {
+    background: #eaf4ff;
+    border-radius: 20px;
+    padding: 28px 18px 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.stories-title {
+    color: #0b3874;
+    font-weight: 800;
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.story-card {
+    background: #fff;
+    border: 1px solid #d9e8ff;
+    border-radius: 18px;
+    box-shadow: 0 10px 22px rgba(0,0,0,.06);
+    text-align: center;
+    padding: 130px 22px 24px;
+    min-height: 360px;
+    position: relative;
+    overflow: visible;
+}
+
+.story-avatar-wrap {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 18px rgba(0,0,0,.14);
+    overflow: hidden;
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.story-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.story-name {
+    color: #143a73;
+    font-weight: 800;
+    margin-bottom: .8rem;
+    font-size: clamp(1.5rem, 2.2vw, 2rem);
+    line-height: 1.15;
+}
+
+.story-text {
+    color: #4a6386;
+    font-size: 1.03rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ---- Carousel historias ---- */
+#storiesCarousel .carousel-control-prev,
+#storiesCarousel .carousel-control-next {
+    width: 46px;
+    height: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    border-radius: 50%;
+    background: #4f95f7;
+    z-index: 5;
+}
+
+#storiesCarousel .carousel-control-prev {
+    left: -6px;
+}
+
+#storiesCarousel .carousel-control-next {
+    right: -6px;
+}
+
+#storiesCarousel .carousel-control-prev-icon,
+#storiesCarousel .carousel-control-next-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    filter: brightness(0) invert(1);
+    background-size: 100% 100%;
+}
+
+/* ---- Carouseles generales ---- */
+.carousel {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 23, 42, .35);
+    border-radius: 50%;
+    opacity: .95;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background: rgba(15, 23, 42, .55);
+    }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* ---- Categorías premium ---- */
+.fm-categories-section {
+    background: #eaf4ff;
+    border-radius: 26px;
+    padding: 28px 22px;
+    margin: 26px 0;
+    box-shadow: 0 14px 34px rgba(0,0,0,.08);
+}
+
+.fm-categories-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.fm-categories-title {
+    margin: 0;
+    color: #0f172a;
+    font-weight: 900;
+    font-size: clamp(1.6rem,2.2vw,2.2rem);
+    letter-spacing: .2px;
+}
+
+.fm-categories-track {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+.fm-category-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #142033;
+    border: 1px solid rgba(15,23,42,.18);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,.16);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+    .fm-category-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 34px rgba(0,0,0,.22);
+    }
+
+.fm-category-imgwrap {
+    overflow: hidden;
+}
+
+.fm-category-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform .35s ease;
+}
+
+.fm-category-card:hover .fm-category-img {
+    transform: scale(1.03);
+}
+
+.fm-category-body {
+    padding: 14px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fm-category-name {
+    color: #f1f5f9;
+    font-weight: 900;
+    font-size: 1.05rem;
+    line-height: 1.15;
+    margin: 0 0 .45rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.4em;
+}
+
+.fm-category-desc {
+    color: #94a3b8;
+    font-size: .95rem;
+    line-height: 1.45;
+    margin: 0 0 12px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.2em;
+}
+
+.fm-category-btn {
+    margin-top: auto;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: 800;
+    padding: .68rem .95rem;
+    background: linear-gradient(135deg,#2f66e8,#1f57de) !important;
+    border: none !important;
+    box-shadow: 0 9px 20px rgba(47,102,232,.18);
+}
+
+    .fm-category-btn:hover {
+        background: linear-gradient(135deg,#285bd2,#1a4dca) !important;
+        transform: translateY(-1px);
+        color: #fff;
+    }
+
+/* ---- Responsive ---- */
+@media (max-width: 1199.98px) {
+    .fm-categories-track {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-home, .hero-overlay {
+        min-height: 360px;
+    }
+
+    .hero-overlay {
+        padding: 1.5rem 1.2rem;
+        justify-content: center;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story-card {
+        min-height: 320px;
+        padding: 78px 16px 20px;
+    }
+
+    .story-avatar-wrap {
+        width: 96px;
+        height: 96px;
+        top: -46px;
+    }
+
+    .story-name {
+        font-size: 1.6rem;
+    }
+
+    #storiesCarousel .carousel-control-prev {
+        left: -2px;
+    }
+
+    #storiesCarousel .carousel-control-next {
+        right: -2px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .stories-section {
+        padding: 22px 12px 12px;
+    }
+
+    .story-card {
+        min-height: auto;
+        padding: 72px 14px 18px;
+    }
+
+    .story-text {
+        font-size: .98rem;
+        line-height: 1.58;
+    }
+
+    .story-avatar-wrap {
+        width: 90px;
+        height: 90px;
+        top: -42px;
+    }
+
+    .fm-categories-track {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,318 @@
+﻿/* =============================================
+   FOOTER.CSS — Footer de Fisiomarca
+   Fisiomarca
+============================================= */
+
+footer.fm-footer {
+    background: radial-gradient(900px 360px at 18% -10%, rgba(13,110,253,.32), transparent 55%), radial-gradient(800px 360px at 88% 10%, rgba(25,135,84,.24), transparent 55%), linear-gradient(180deg, #0b1220 0%, #070c16 100%) !important;
+    color: rgba(255,255,255,.88) !important;
+    border-top: 1px solid rgba(255,255,255,.10);
+    margin-top: 48px;
+}
+
+    footer.fm-footer .fm-footer-inner {
+        padding: 48px 0 22px;
+    }
+
+        footer.fm-footer .fm-footer-inner .row {
+            align-items: stretch !important;
+        }
+
+    footer.fm-footer .fm-footer-col {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* ---- Tipografía ---- */
+    footer.fm-footer .fm-footer-brand {
+        font-size: 2.1rem;
+        font-weight: 900;
+        color: #fff;
+        margin: 0 0 8px;
+        letter-spacing: .2px;
+        line-height: 1.08;
+    }
+
+    footer.fm-footer .fm-footer-text {
+        color: rgba(255,255,255,.72);
+        line-height: 1.65;
+        margin: 0 0 14px;
+        max-width: 420px;
+    }
+
+    footer.fm-footer .fm-footer-title {
+        font-weight: 900;
+        letter-spacing: .10em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,.75);
+        font-size: .86rem;
+        margin: 0 0 12px;
+        line-height: 1.2;
+    }
+
+    footer.fm-footer a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+        footer.fm-footer a:hover {
+            color: #fff;
+        }
+
+    footer.fm-footer svg,
+    footer.fm-footer img {
+        width: 18px !important;
+        height: 18px !important;
+        max-width: 18px !important;
+        max-height: 18px !important;
+        display: block !important;
+    }
+
+    footer.fm-footer svg {
+        fill: currentColor !important;
+    }
+
+    /* ---- Contacto ---- */
+    footer.fm-footer .fm-contact {
+        display: grid;
+        gap: 10px;
+    }
+
+    footer.fm-footer .fm-contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 14px;
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.10);
+        width: fit-content;
+        max-width: 100%;
+        transition: transform .18s ease, background-color .18s ease, border-color .18s ease;
+    }
+
+        footer.fm-footer .fm-contact-item:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,.10);
+            border-color: rgba(255,255,255,.18);
+        }
+
+    footer.fm-footer .fm-ic {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        background: rgba(255,255,255,.10);
+        border: 1px solid rgba(255,255,255,.12);
+        flex: 0 0 40px;
+        color: #fff;
+    }
+
+        footer.fm-footer .fm-ic svg {
+            width: 18px !important;
+            height: 18px !important;
+        }
+
+    footer.fm-footer .fm-contact-text {
+        font-weight: 900;
+        color: #fff;
+    }
+
+    footer.fm-footer .fm-arrow {
+        opacity: .9;
+        font-weight: 900;
+    }
+
+    /* ---- Columna central ---- */
+    footer.fm-footer .fm-mid {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer.fm-footer .fm-footer-social {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer.fm-footer .fm-social-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 999px;
+        display: grid;
+        place-items: center;
+        background: rgba(255,255,255,.08);
+        border: 1px solid rgba(255,255,255,.12);
+        transition: transform .18s ease, background-color .18s ease, border-color .18s ease;
+        color: #fff;
+    }
+
+        footer.fm-footer .fm-social-btn:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,.14);
+            border-color: rgba(255,255,255,.22);
+        }
+
+        footer.fm-footer .fm-social-btn svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+    footer.fm-footer .fm-mini-links {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        color: rgba(255,255,255,.72);
+        font-weight: 900;
+    }
+
+        footer.fm-footer .fm-mini-links a {
+            color: rgba(255,255,255,.72);
+        }
+
+            footer.fm-footer .fm-mini-links a:hover {
+                color: #fff;
+            }
+
+    footer.fm-footer .fm-dot {
+        opacity: .45;
+    }
+
+    /* ---- Mapa ---- */
+    footer.fm-footer .fm-mapcard {
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 18px;
+        padding: 14px;
+        box-shadow: 0 16px 34px rgba(0,0,0,.25);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer.fm-footer .fm-maphead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 0 0 10px;
+    }
+
+    footer.fm-footer .fm-maplink {
+        color: rgba(255,255,255,.80);
+        font-weight: 900;
+        font-size: .92rem;
+        white-space: nowrap;
+    }
+
+        footer.fm-footer .fm-maplink:hover {
+            color: #fff;
+        }
+
+    footer.fm-footer .fm-mapratio {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
+    }
+
+        footer.fm-footer .fm-mapratio iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+    /* ---- Línea y parte inferior ---- */
+    footer.fm-footer .fm-hr {
+        height: 1px;
+        background: rgba(255,255,255,.10);
+        margin: 26px 0 14px;
+    }
+
+    footer.fm-footer .fm-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: rgba(255,255,255,.70);
+        font-weight: 650;
+        font-size: .98rem;
+    }
+
+    footer.fm-footer .fm-made {
+        font-weight: 900;
+    }
+
+/* ---- Desktop: centrar columna del medio ---- */
+@media (min-width: 992px) {
+    footer.fm-footer .fm-mid {
+        align-items: center;
+        text-align: center;
+    }
+
+    footer.fm-footer .fm-footer-social {
+        justify-content: center;
+    }
+
+    footer.fm-footer .fm-mini-links {
+        justify-content: center;
+    }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+    footer.fm-footer .fm-footer-inner {
+        padding: 36px 0 20px;
+    }
+
+    footer.fm-footer .fm-footer-brand {
+        font-size: 1.85rem;
+    }
+
+    footer.fm-footer .fm-maphead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer.fm-footer .fm-maplink {
+        white-space: normal;
+    }
+
+    footer.fm-footer .fm-mid {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer.fm-footer .fm-mini-links {
+        justify-content: flex-start;
+    }
+
+    footer.fm-footer .fm-bottom {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer.fm-footer .fm-contact-item {
+        width: 100%;
+    }
+}

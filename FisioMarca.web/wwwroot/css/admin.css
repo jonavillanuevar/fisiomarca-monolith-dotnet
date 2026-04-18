@@ -1,0 +1,351 @@
+﻿/* =============================================
+   ADMIN.CSS — Estilos compartidos del admin
+   (extraídos de site.css)
+   Fisiomarca
+============================================= */
+
+/* ---- Variables admin ---- */
+:root {
+    --ad-bg: #eef3f8;
+    --ad-surface: #ffffff;
+    --ad-text: #0f172a;
+    --ad-muted: #64748b;
+    --ad-primary: #2563eb;
+    --ad-border: #e5e7eb;
+    --ad-shadow: 0 10px 24px rgba(15,23,42,.08);
+}
+
+html[data-theme="dark"] {
+    --ad-bg: #0b1220;
+    --ad-surface: #131c2e;
+    --ad-text: #e2e8f0;
+    --ad-muted: #94a3b8;
+    --ad-primary: #3b82f6;
+    --ad-border: #22304a;
+    --ad-shadow: 0 14px 30px rgba(0,0,0,.45);
+}
+
+/* ---- Body admin ---- */
+body.admin-body {
+    background: var(--ad-bg);
+    color: var(--ad-text);
+    min-height: 100vh;
+}
+
+/* ---- Shell / Layout ---- */
+.admin-shell {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+/* ---- Sidebar ---- */
+.admin-sidebar {
+    background: var(--ad-surface);
+    border-right: 1px solid var(--ad-border);
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.admin-brand {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid var(--ad-border);
+    border-radius: 14px;
+}
+
+.admin-user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--ad-primary);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
+.admin-user-name {
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.admin-user-role {
+    font-size: .86rem;
+    color: var(--ad-muted);
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-nav-link {
+    text-decoration: none;
+    color: var(--ad-text);
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+    .admin-nav-link:hover {
+        background: rgba(37,99,235,.10);
+        color: var(--ad-primary);
+    }
+
+.admin-bottom {
+    margin-top: auto;
+}
+
+.theme-toggle-btn,
+.admin-logout-btn {
+    width: 100%;
+    border: 1px solid var(--ad-border);
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-weight: 700;
+    background: var(--ad-surface);
+    color: var(--ad-text);
+}
+
+.admin-logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+}
+
+    .admin-logout-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+/* ---- Área principal ---- */
+.admin-main {
+    padding: 26px;
+}
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.admin-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.admin-subtitle {
+    margin: .2rem 0 0;
+    color: var(--ad-muted);
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ---- Card base ---- */
+.fm-card {
+    border: 1px solid var(--ad-border);
+    border-radius: 16px;
+    background: var(--ad-surface);
+    box-shadow: var(--ad-shadow);
+}
+
+/* ---- Stats ---- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(150px,1fr));
+    gap: 12px;
+}
+
+.stat-card {
+    background: var(--ad-surface);
+    border: 1px solid var(--ad-border);
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.stat-label {
+    color: var(--ad-muted);
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 6px;
+}
+
+/* ---- Charts ---- */
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.block-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+#chartByDay, #chartTopServices {
+    height: 280px !important;
+}
+
+/* ---- Calendario y alertas ---- */
+.calendar-alerts-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 12px;
+}
+
+#adminCalendar .fc {
+    color: var(--ad-text);
+}
+
+#adminCalendar .fc-toolbar-title {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#adminCalendar .fc-button {
+    border-radius: 10px;
+}
+
+#adminCalendar .fc-daygrid-event {
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: .75rem;
+    border: 0;
+}
+
+#adminCalendar .programada {
+    background: #dbeafe !important;
+    color: #1e40af !important;
+}
+
+#adminCalendar .atendida {
+    background: #dcfce7 !important;
+    color: #166534 !important;
+}
+
+#adminCalendar .cancelada {
+    background: #fee2e2 !important;
+    color: #991b1b !important;
+}
+
+/* ---- Lista de alertas ---- */
+.alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.alert-item {
+    border: 1px solid var(--ad-border);
+    border-radius: 12px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 95px 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.alert-time {
+    font-size: .82rem;
+    color: var(--ad-muted);
+    font-weight: 700;
+}
+
+.alert-title {
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.alert-sub {
+    font-size: .85rem;
+    color: var(--ad-muted);
+}
+
+.alert-status {
+    font-size: .75rem;
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-weight: 700;
+}
+
+    .alert-status.programada {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+    .alert-status.atendida {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    .alert-status.cancelada {
+        background: #fee2e2;
+        color: #991b1b;
+    }
+
+/* ---- Responsive ---- */
+@media (max-width: 991.98px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-alerts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-sidebar {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--ad-border);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .admin-main {
+        padding: 16px;
+    }
+
+    .admin-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2,minmax(120px,1fr));
+    }
+}
